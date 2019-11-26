@@ -55,13 +55,41 @@ public class FlowableClient {
         return this;
     }
 
-    public EngineAPI getEngineAPI() {
-        return this.getAPI(EngineAPI.class);
+    public DatabaseAPI getDataBaseAPI() {
+        return this.getAPI(DatabaseAPI.class);
     }
 
     public DeploymentAPI getDeploymentAPI() {
         return this.getAPI(DeploymentAPI.class);
 
+    }
+
+    public EngineAPI getEngineAPI() {
+        return this.getAPI(EngineAPI.class);
+    }
+
+    public ExecutionAPI getExecutionAPI() {
+        return this.getAPI(ExecutionAPI.class);
+    }
+
+    public FormAPI getFormAPI() {
+        return this.getAPI(FormAPI.class);
+    }
+
+    public GroupAPI getGroupAPI() {
+        return this.getAPI(GroupAPI.class);
+    }
+
+    public HistoryAPI getHistoryAPI() {
+        return this.getAPI(HistoryAPI.class);
+    }
+
+    public JobsAPI getJobsAPI() {
+        return this.getAPI(JobsAPI.class);
+    }
+
+    public ModelAPI getModelAPI() {
+        return this.getAPI(ModelAPI.class);
     }
 
     public ProcessDefinitionsAPI getProcessDefinitionsAPI() {
@@ -72,8 +100,16 @@ public class FlowableClient {
         return this.getAPI(ProcessInstancesAPI.class);
     }
 
+    public RunTimeAPI getRunTimeAPI() {
+        return this.getAPI(RunTimeAPI.class);
+    }
+
     public TaskAPI getTaskAPI() {
         return this.getAPI(TaskAPI.class);
+    }
+
+    public UserAPI getUserAPI() {
+        return this.getAPI(UserAPI.class);
     }
 
     private <T> T getAPI(Class<T> clazz) {
