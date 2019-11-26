@@ -2,14 +2,12 @@ package org.unreal.flowable;
 
 import okhttp3.OkHttpClient;
 import org.apache.commons.io.IOUtils;
-import org.unreal.flowable.api.DeploymentAPI;
-import org.unreal.flowable.api.EngineAPI;
-import org.unreal.flowable.api.ProcessDefinitionsAPI;
-import org.unreal.flowable.api.ProcessInstancesAPI;
+import org.unreal.flowable.api.*;
 import org.unreal.flowable.config.AuthorizationInterceptor;
 import org.unreal.flowable.config.ConverterFactory;
 import org.unreal.flowable.config.SyncCallAdapterFactory;
 import retrofit2.Retrofit;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Base64;
@@ -72,6 +70,10 @@ public class FlowableClient {
 
     public ProcessInstancesAPI getProcessInstancesAPI() {
         return this.getAPI(ProcessInstancesAPI.class);
+    }
+
+    public TaskAPI getTaskAPI() {
+        return this.getAPI(TaskAPI.class);
     }
 
     private <T> T getAPI(Class<T> clazz) {

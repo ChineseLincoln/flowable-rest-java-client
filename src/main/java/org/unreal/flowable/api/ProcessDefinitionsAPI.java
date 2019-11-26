@@ -34,4 +34,19 @@ public interface ProcessDefinitionsAPI {
     @PUT("repository/process-definitions/{processDefinitionId}")
     ProcessDefinitions changeState(@Path("processDefinitionId") String processDefinitionId , @Body ChangeState changeState);
 
+    @GET("repository/process-definitions/{processDefinitionId}/identitylinks")
+    List<ProcessDefinitionsLinks> getProcessDefinitionsLinks(@Path("processDefinitionId") String processDefinitionId);
+
+    @POST("repository/process-definitions/{processDefinitionId}/identitylinks")
+    ProcessDefinitionsLinks createProcessDefinitionsLinks(@Path("processDefinitionId") String processDefinitionId, @Body Map<String, String> data);
+
+    @DELETE("repository/process-definitions/{processDefinitionId}/identitylinks/{family}/{identityId}")
+    ProcessDefinitionsLinks deleteProcessDefinitionsLinks(@Path("processDefinitionId") String processDefinitionId,
+                                                          @Path("family") String family,
+                                                          @Path("identityId") String identityId);
+
+    @GET("repository/process-definitions/{processDefinitionId}/identitylinks/{family}/{identityId}")
+    ProcessDefinitionsLinks getProcessDefinitionsLinks(@Path("processDefinitionId") String processDefinitionId,
+                                                       @Path("family") String family,
+                                                       @Path("identityId") String identityId);
 }

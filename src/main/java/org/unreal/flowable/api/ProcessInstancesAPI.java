@@ -46,4 +46,40 @@ public interface ProcessInstancesAPI {
     @GET("runtime/process-instances/{processInstanceId}/diagram")
     InputStream getProcessInstanceDiagram(@Path("processInstanceId") String processInstanceId);
 
+    @GET("runtime/process-instances/{processInstanceId}/identitylinks")
+    List<Identitylinks> getProcessInstanceIdentitylinks(@Path("processInstanceId") String processInstanceId);
+
+    @POST("runtime/process-instances/{processInstanceId}/identitylinks")
+    Identitylinks createProcessInstanceUserIdentitylinks(@Path("processInstanceId") String processInstanceId,
+                                                         @Body UserIdentitylinks userIdentitylinks);
+
+    @DELETE("runtime/process-instances/{processInstanceId}/identitylinks/users/{user}/{type}")
+    Void deleteProcessInstanceUserIdentitylinks(@Path("processInstanceId") String processInstanceId,
+                                                @Path("user") String user,
+                                                @Path("type") String type);
+
+    @GET("runtime/process-instances/{processInstanceId}/variables")
+    List<Variables> getProcessInstanceVariables(@Path("processInstanceId") String processInstanceId);
+
+    @GET("runtime/process-instances/{processInstanceId}/variables/{variableName}")
+    Variables getProcessInstanceVariablesByName(@Path("processInstanceId") String processInstanceId,
+                                                @Path("variableName") String variableName);
+
+    @POST("runtime/process-instances/{processInstanceId}/variables")
+    List<Variables> addProcessInstanceVariables(@Path("processInstanceId") String processInstanceId,
+                                                @Body List<Variables> variables);
+
+    @PUT("runtime/process-instances/{processInstanceId}/variables")
+    List<Variables> updateProcessInstanceVariables(@Path("processInstanceId") String processInstanceId,
+                                                   @Body List<Variables> variables);
+
+    @POST("runtime/process-instances/{processInstanceId}/variables/{variableName}")
+    List<Variables> addProcessInstanceVariablesByName(@Path("processInstanceId") String processInstanceId,
+                                                      @Path("variableName") String variableName,
+                                                      @Body Variables variable);
+
+    @PUT("runtime/process-instances/{processInstanceId}/variables/{variableName}")
+    List<Variables> updateProcessInstanceVariablesByName(@Path("processInstanceId") String processInstanceId,
+                                                         @Path("variableName") String variableName,
+                                                         @Body Variables variable);
 }
