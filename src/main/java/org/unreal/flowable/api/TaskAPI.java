@@ -33,10 +33,10 @@ public interface TaskAPI {
     Paging<Task> queryTasks(@Body TaskQuery taskQuery);
 
     @PUT("runtime/tasks/{taskId}")
-    Task updateTask(@Body UpdateTaskQuery updateTaskQuery);
+    Task updateTask(@Path("taskId") String taskId, @Body UpdateTaskQuery updateTaskQuery);
 
     @POST("runtime/tasks/{taskId}")
-    Task taskAction(@Body ActionTaskQuery actionTaskQuery);
+    Task taskAction(@Path("taskId") String taskId, @Body ActionTaskQuery actionTaskQuery);
 
     @DELETE("runtime/tasks/{taskId}?cascadeHistory={cascadeHistory}&deleteReason={deleteReason}")
     Void deleteTaskById(@Path("taskId") String taskId,
@@ -59,7 +59,7 @@ public interface TaskAPI {
                                             @Path("attachmentId") String attachmentId);
 
     @POST("runtime/tasks/{taskId}/comments")
-    Comment createCommentByTaskId(@Path("taskId") String taskId ,
+    Comment createCommentByTaskId(@Path("taskId") String taskId,
                                   @Body CommentQuery commentQuery);
 
     @GET("runtime/tasks/{taskId}/comments")

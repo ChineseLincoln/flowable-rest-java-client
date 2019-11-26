@@ -41,7 +41,7 @@ public interface ProcessInstancesAPI {
     ProcessInstances startProcessByProcessDefinitionKey(@Body ProcessInstanceStartByDefinitionKeyQuery startByDefinitionKey);
 
     @POST("runtime/process-instances")
-    ProcessInstances startProcessByProcessDefinitionId(@Body ProcessInstanceStartByMessageQuery startByMessage);
+    ProcessInstances startProcessByMessageId(@Body ProcessInstanceStartByMessageQuery startByMessage);
 
     @GET("runtime/process-instances/{processInstanceId}/diagram")
     InputStream getProcessInstanceDiagram(@Path("processInstanceId") String processInstanceId);
