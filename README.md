@@ -1,6 +1,6 @@
-# Flowable Client SDK
+# flowable BPMN  flow engine , Java Rest Client
 
-Flowable Client SDK 是对基于restful架构的flowable流程引擎的api接口封装
+Flowable Client flowable流程引擎提供的restful的api接口开发
 
 ## 版本对应
 
@@ -14,18 +14,10 @@ Flowable Client SDK 是对基于restful架构的flowable流程引擎的api接口
 <tbody>
 <tr>
   <td>1.0.0</td>
-  <td>6.2.1.0</td>
+  <td>6.4.2.0</td>
 </tr>
 </tbody>
 </table>
-
-## Maven 依赖
-
-    <dependency>
-    	<groupId>com.toucan</groupId>
-    	<artifactId>flowable-bpmn-client</artifactId>
-    	<version>1.0-SNAPSHOT</version>
-    </dependency>
 
 ## 使用方式
 
