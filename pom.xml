@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
         <hamcrest.version>2.0.0.0</hamcrest.version>
-        <retrofit2.version>2.4.0</retrofit2.version>
+        <retrofit2.version>2.5.0</retrofit2.version>
         <jdk.version>1.8</jdk.version>
     </properties>
 
