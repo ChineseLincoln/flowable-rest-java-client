@@ -3,7 +3,7 @@ package org.unreal.flowable.request;
 /**
  * Created by Administrator on 2018/3/22.
  */
-public class ModelFilter extends AbstractParamsFilter{
+public class ModelFilter extends AbstractParamsFilter {
 
     private String name;
     private String key;

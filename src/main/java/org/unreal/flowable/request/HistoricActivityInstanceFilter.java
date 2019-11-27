@@ -9,13 +9,13 @@ public class HistoricActivityInstanceFilter extends AbstractParamsFilter {
     private String activityName;
     private String activityType;
     private String executionId;
-    private boolean finished;
+    private Boolean finished;
     private String taskAssignee;
     private String processInstanceId;
     private String processDefinitionId;
     private String tenantId;
     private String tenantIdLike;
-    private boolean withoutTenantId;
+    private Boolean withoutTenantId;
 
     public String getActivityId() {
         return activityId;
@@ -57,11 +57,11 @@ public class HistoricActivityInstanceFilter extends AbstractParamsFilter {
         this.executionId = executionId;
     }
 
-    public boolean isFinished() {
+    public Boolean isFinished() {
         return finished;
     }
 
-    public void setFinished(boolean finished) {
+    public void setFinished(Boolean finished) {
         this.finished = finished;
     }
 
@@ -105,11 +105,11 @@ public class HistoricActivityInstanceFilter extends AbstractParamsFilter {
         this.tenantIdLike = tenantIdLike;
     }
 
-    public boolean isWithoutTenantId() {
+    public Boolean isWithoutTenantId() {
         return withoutTenantId;
     }
 
-    public void setWithoutTenantId(boolean withoutTenantId) {
+    public void setWithoutTenantId(Boolean withoutTenantId) {
         this.withoutTenantId = withoutTenantId;
     }
 }

@@ -9,8 +9,8 @@ public class HistoricDetailQuery extends PagingFilter {
     private String executionId;
     private String activityInstanceId;
     private String taskId;
-    private boolean selectOnlyFormProperties;
-    private boolean selectOnlyVariableUpdates;
+    private Boolean selectOnlyFormProperties;
+    private Boolean selectOnlyVariableUpdates;
 
     public String getId() {
         return id;
@@ -52,19 +52,19 @@ public class HistoricDetailQuery extends PagingFilter {
         this.taskId = taskId;
     }
 
-    public boolean isSelectOnlyFormProperties() {
+    public Boolean isSelectOnlyFormProperties() {
         return selectOnlyFormProperties;
     }
 
-    public void setSelectOnlyFormProperties(boolean selectOnlyFormProperties) {
+    public void setSelectOnlyFormProperties(Boolean selectOnlyFormProperties) {
         this.selectOnlyFormProperties = selectOnlyFormProperties;
     }
 
-    public boolean isSelectOnlyVariableUpdates() {
+    public Boolean isSelectOnlyVariableUpdates() {
         return selectOnlyVariableUpdates;
     }
 
-    public void setSelectOnlyVariableUpdates(boolean selectOnlyVariableUpdates) {
+    public void setSelectOnlyVariableUpdates(Boolean selectOnlyVariableUpdates) {
         this.selectOnlyVariableUpdates = selectOnlyVariableUpdates;
     }
 }

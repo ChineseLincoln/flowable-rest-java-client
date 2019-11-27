@@ -9,11 +9,11 @@ public class TaskFilter extends AbstractParamsFilter {
 
     private String description;
 
-    private int priority;
+    private Integer priority;
 
-    private int minimumPriority;
+    private Integer minimumPriority;
 
-    private int maximumPriority;
+    private Integer maximumPriority;
 
     private String assignee;
 
@@ -23,7 +23,7 @@ public class TaskFilter extends AbstractParamsFilter {
 
     private String ownerLike;
 
-    private boolean unassigned;
+    private Boolean unassigned;
 
     private String delegationState;
 
@@ -69,15 +69,15 @@ public class TaskFilter extends AbstractParamsFilter {
 
     private Date dueAfter;
 
-    private boolean withoutDueDate;
+    private Boolean withoutDueDate;
 
-    private boolean excludeSubTasks;
+    private Boolean excludeSubTasks;
 
-    private boolean active;
+    private Boolean active;
 
-    private boolean includeTaskLocalVariables;
+    private Boolean includeTaskLocalVariables;
 
-    private boolean includeProcessVariables;
+    private Boolean includeProcessVariables;
 
     private String tenantId;
 
@@ -113,27 +113,27 @@ public class TaskFilter extends AbstractParamsFilter {
         this.description = description;
     }
 
-    public int getPriority() {
+    public Integer getPriority() {
         return priority;
     }
 
-    public void setPriority(int priority) {
+    public void setPriority(Integer priority) {
         this.priority = priority;
     }
 
-    public int getMinimumPriority() {
+    public Integer getMinimumPriority() {
         return minimumPriority;
     }
 
-    public void setMinimumPriority(int minimumPriority) {
+    public void setMinimumPriority(Integer minimumPriority) {
         this.minimumPriority = minimumPriority;
     }
 
-    public int getMaximumPriority() {
+    public Integer getMaximumPriority() {
         return maximumPriority;
     }
 
-    public void setMaximumPriority(int maximumPriority) {
+    public void setMaximumPriority(Integer maximumPriority) {
         this.maximumPriority = maximumPriority;
     }
 
@@ -169,11 +169,11 @@ public class TaskFilter extends AbstractParamsFilter {
         this.ownerLike = ownerLike;
     }
 
-    public boolean isUnassigned() {
+    public Boolean isUnassigned() {
         return unassigned;
     }
 
-    public void setUnassigned(boolean unassigned) {
+    public void setUnassigned(Boolean unassigned) {
         this.unassigned = unassigned;
     }
 
@@ -353,43 +353,43 @@ public class TaskFilter extends AbstractParamsFilter {
         this.dueAfter = dueAfter;
     }
 
-    public boolean isWithoutDueDate() {
+    public Boolean isWithoutDueDate() {
         return withoutDueDate;
     }
 
-    public void setWithoutDueDate(boolean withoutDueDate) {
+    public void setWithoutDueDate(Boolean withoutDueDate) {
         this.withoutDueDate = withoutDueDate;
     }
 
-    public boolean isExcludeSubTasks() {
+    public Boolean isExcludeSubTasks() {
         return excludeSubTasks;
     }
 
-    public void setExcludeSubTasks(boolean excludeSubTasks) {
+    public void setExcludeSubTasks(Boolean excludeSubTasks) {
         this.excludeSubTasks = excludeSubTasks;
     }
 
-    public boolean isActive() {
+    public Boolean isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         this.active = active;
     }
 
-    public boolean isIncludeTaskLocalVariables() {
+    public Boolean isIncludeTaskLocalVariables() {
         return includeTaskLocalVariables;
     }
 
-    public void setIncludeTaskLocalVariables(boolean includeTaskLocalVariables) {
+    public void setIncludeTaskLocalVariables(Boolean includeTaskLocalVariables) {
         this.includeTaskLocalVariables = includeTaskLocalVariables;
     }
 
-    public boolean isIncludeProcessVariables() {
+    public Boolean isIncludeProcessVariables() {
         return includeProcessVariables;
     }
 
-    public void setIncludeProcessVariables(boolean includeProcessVariables) {
+    public void setIncludeProcessVariables(Boolean includeProcessVariables) {
         this.includeProcessVariables = includeProcessVariables;
     }
 

@@ -12,15 +12,15 @@ public class HistoricProcessInstanceFilter {
     private String processDefinitionId;
     private String processDefinitionKey;
     private String superProcessInstanceId;
-    private boolean excludeSubprocesses;
-    private boolean finished;
+    private Boolean excludeSubprocesses;
+    private Boolean finished;
     private String involvedUser;
     private Date finishedAfter;
     private Date finishedBefore;
     private Date startedAfter;
     private Date startedBefore;
     private String startedBy;
-    private boolean includeProcessVariables;
+    private Boolean includeProcessVariables;
     private String tenantId;
     private String tenantIdLike;
     private Boolean withoutTenantId;
@@ -65,19 +65,19 @@ public class HistoricProcessInstanceFilter {
         this.superProcessInstanceId = superProcessInstanceId;
     }
 
-    public boolean isExcludeSubprocesses() {
+    public Boolean isExcludeSubprocesses() {
         return excludeSubprocesses;
     }
 
-    public void setExcludeSubprocesses(boolean excludeSubprocesses) {
+    public void setExcludeSubprocesses(Boolean excludeSubprocesses) {
         this.excludeSubprocesses = excludeSubprocesses;
     }
 
-    public boolean isFinished() {
+    public Boolean isFinished() {
         return finished;
     }
 
-    public void setFinished(boolean finished) {
+    public void setFinished(Boolean finished) {
         this.finished = finished;
     }
 
@@ -129,11 +129,11 @@ public class HistoricProcessInstanceFilter {
         this.startedBy = startedBy;
     }
 
-    public boolean isIncludeProcessVariables() {
+    public Boolean isIncludeProcessVariables() {
         return includeProcessVariables;
     }
 
-    public void setIncludeProcessVariables(boolean includeProcessVariables) {
+    public void setIncludeProcessVariables(Boolean includeProcessVariables) {
         this.includeProcessVariables = includeProcessVariables;
     }
 

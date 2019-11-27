@@ -20,7 +20,7 @@ public class UpdateTaskQuery {
     private String name;
     private String description;
     private String assignee;
-    private int priority;
+    private Integer priority;
 
     public void setDelegationState(String delegationState) {
         this.delegationState = delegationState;
@@ -50,7 +50,7 @@ public class UpdateTaskQuery {
         this.assignee = assignee;
     }
 
-    public void setPriority(int priority) {
+    public void setPriority(Integer priority) {
         this.priority = priority;
     }
 
@@ -82,7 +82,7 @@ public class UpdateTaskQuery {
         return assignee;
     }
 
-    public int getPriority() {
+    public Integer getPriority() {
         return priority;
     }
 }

@@ -12,7 +12,7 @@ public class ProcessInstanceStartByDefinitionIdQuery {
      */
     private String processDefinitionId;
     private List<VariablesQuery> variables;
-    private boolean returnVariables = true;
+    private Boolean returnVariables;
     private String businessKey;
 
     public void setProcessDefinitionId(String processDefinitionId) {

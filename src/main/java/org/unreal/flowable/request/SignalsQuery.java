@@ -12,7 +12,7 @@ public class SignalsQuery {
      * tenantId : execute
      */
     private String signalName;
-    private boolean async;
+    private Boolean async;
     private List<VariablesQuery> variables;
     private String tenantId;
 
@@ -20,7 +20,7 @@ public class SignalsQuery {
         this.signalName = signalName;
     }
 
-    public void setAsync(boolean async) {
+    public void setAsync(Boolean async) {
         this.async = async;
     }
 
@@ -36,7 +36,7 @@ public class SignalsQuery {
         return signalName;
     }
 
-    public boolean isAsync() {
+    public Boolean isAsync() {
         return async;
     }
 

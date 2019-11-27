@@ -10,7 +10,7 @@ public class DeploymentFilter extends AbstractParamsFilter {
     private String categoryNotEquals;
     private String tenantId;
     private String tenantIdLike;
-    private boolean withoutTenantId;
+    private Boolean withoutTenantId;
     private String sort;
 
     public String getName() {
@@ -61,11 +61,11 @@ public class DeploymentFilter extends AbstractParamsFilter {
         this.tenantIdLike = tenantIdLike;
     }
 
-    public boolean isWithoutTenantId() {
+    public Boolean isWithoutTenantId() {
         return withoutTenantId;
     }
 
-    public void setWithoutTenantId(boolean withoutTenantId) {
+    public void setWithoutTenantId(Boolean withoutTenantId) {
         this.withoutTenantId = withoutTenantId;
     }
 
