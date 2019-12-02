@@ -20,7 +20,7 @@ public interface ProcessDefinitionsAPI {
     Paging<ProcessDefinitions> getProcessDefinitions();
 
     @GET("repository/process-definitions/{processDefinitionId}")
-    Paging<ProcessDefinitions> getProcessDefinitions(@Path("processDefinitionId") String processDefinitionId);
+    ProcessDefinitions getProcessDefinitions(@Path("processDefinitionId") String processDefinitionId);
 
     @PUT("repository/process-definitions/{processDefinitionId}")
     Void updateProcessDefinitions(@Body Map<String,String> data);
