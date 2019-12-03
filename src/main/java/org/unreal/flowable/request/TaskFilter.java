@@ -2,7 +2,7 @@ package org.unreal.flowable.request;
 
 import java.util.Date;
 
-public class TaskFilter extends AbstractParamsFilter {
+public class TaskFilter extends PagingFilter {
     private String name;
 
     private String nameLike;
