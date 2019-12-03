@@ -16,23 +16,23 @@ import java.util.Map;
 public interface ProcessInstancesAPI {
 
     @GET("query/process-instances")
-    Paging<ProcessInstances> queryProcessDefinitions(@Body ProcessInstancesQuery processInstancesQuery);
+    Paging<ProcessInstances> queryProcessInstance(@Body ProcessInstancesQuery processInstancesQuery);
 
     @GET("runtime/process-instances")
-    Paging<ProcessInstances> getProcessDefinitions();
+    Paging<ProcessInstances> getProcessInstance();
 
     @GET("runtime/process-instances")
-    Paging<ProcessInstances> getProcessDefinitionsByFilter(@QueryMap Map<String, Object> params);
+    Paging<ProcessInstances> getProcessInstanceByFilter(@QueryMap Map<String, Object> params);
 
     @GET("runtime/process-instances/{processInstanceId}")
-    Paging<ProcessInstances> getProcessDefinitions(@Path("processInstanceId") String processInstanceId);
+    Paging<ProcessInstances> getProcessInstance(@Path("processInstanceId") String processInstanceId);
 
     @DELETE("runtime/process-instances/{processInstanceId}")
-    Void deleteProcessDefinitions(@Path("processInstanceId") String processInstanceId);
+    Void deleteProcessInstance(@Path("processInstanceId") String processInstanceId);
 
     @PUT("runtime/process-instances/{processInstanceId}")
-    ProcessInstances changeProcessDefinitionsState(@Path("processInstanceId") String processInstanceId,
-                                                   @Body Map<String, String> request);
+    ProcessInstances changeProcessInstanceState(@Path("processInstanceId") String processInstanceId,
+                                                @Body Map<String, String> request);
 
     @POST("runtime/process-instances")
     ProcessInstances startProcessByProcessDefinitionId(@Body ProcessInstanceStartByDefinitionIdQuery startByDefinitionId);
