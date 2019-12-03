@@ -25,7 +25,7 @@ public interface ProcessInstancesAPI {
     Paging<ProcessInstances> getProcessInstanceByFilter(@QueryMap Map<String, Object> params);
 
     @GET("runtime/process-instances/{processInstanceId}")
-    Paging<ProcessInstances> getProcessInstance(@Path("processInstanceId") String processInstanceId);
+    ProcessInstances getProcessInstance(@Path("processInstanceId") String processInstanceId);
 
     @DELETE("runtime/process-instances/{processInstanceId}")
     Void deleteProcessInstance(@Path("processInstanceId") String processInstanceId);
