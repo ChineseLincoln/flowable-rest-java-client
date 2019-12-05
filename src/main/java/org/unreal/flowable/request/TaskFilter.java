@@ -57,17 +57,17 @@ public class TaskFilter extends PagingFilter {
 
     private String executionId;
 
-    private Date createdOn;
+    private String createdOn;
 
-    private Date createdBefore;
+    private String createdBefore;
 
-    private Date createdAfter;
+    private String createdAfter;
 
-    private Date dueOn;
+    private String dueOn;
 
-    private Date dueBefore;
+    private String dueBefore;
 
-    private Date dueAfter;
+    private String dueAfter;
 
     private Boolean withoutDueDate;
 
@@ -305,51 +305,51 @@ public class TaskFilter extends PagingFilter {
         this.executionId = executionId;
     }
 
-    public Date getCreatedOn() {
+    public String getCreatedOn() {
         return createdOn;
     }
 
-    public void setCreatedOn(Date createdOn) {
+    public void setCreatedOn(String createdOn) {
         this.createdOn = createdOn;
     }
 
-    public Date getCreatedBefore() {
+    public String getCreatedBefore() {
         return createdBefore;
     }
 
-    public void setCreatedBefore(Date createdBefore) {
+    public void setCreatedBefore(String createdBefore) {
         this.createdBefore = createdBefore;
     }
 
-    public Date getCreatedAfter() {
+    public String getCreatedAfter() {
         return createdAfter;
     }
 
-    public void setCreatedAfter(Date createdAfter) {
+    public void setCreatedAfter(String createdAfter) {
         this.createdAfter = createdAfter;
     }
 
-    public Date getDueOn() {
+    public String getDueOn() {
         return dueOn;
     }
 
-    public void setDueOn(Date dueOn) {
+    public void setDueOn(String dueOn) {
         this.dueOn = dueOn;
     }
 
-    public Date getDueBefore() {
+    public String getDueBefore() {
         return dueBefore;
     }
 
-    public void setDueBefore(Date dueBefore) {
+    public void setDueBefore(String dueBefore) {
         this.dueBefore = dueBefore;
     }
 
-    public Date getDueAfter() {
+    public String getDueAfter() {
         return dueAfter;
     }
 
-    public void setDueAfter(Date dueAfter) {
+    public void setDueAfter(String dueAfter) {
         this.dueAfter = dueAfter;
     }
 
